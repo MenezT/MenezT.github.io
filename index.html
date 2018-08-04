@@ -1,9 +1,160 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title> Test running site </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap 4.0.0 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- FontAwesome 5.2.0 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    <title>cExchange Template</title>
+
+    <!-- jQuery & JavaScript functions -->
+    
+
 </head>
 <body>
-<h2> Test site: Dashboard </h2>
+    <!-- Main container -->
+    <div class="container">
+        <!-- Content starts here -->
+
+        <!-- Calculator section - First Row -->
+        <div class="row panel">
+            <!-- Start of first column -->
+            <div class="col-sm-6 col-md-6 col-lg-6 calculator-section">
+                <form>
+                    <div class="form-group">
+                        <h2>cMarket Calculator</h2>
+                    </div>
+                    <div class="form-group input-group col">
+                        <input class="form-control form-control-sm" type="number" id="currency_quantity" placeholder="">
+                        <div class="input-group-append">
+                            <select class="form-control input-group-btn form-control-sm" id="currency_selector">
+                                <option value="steem" selected>STEEM</option>
+                                <option value="sbd">SBD</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group input-group input-group- col">
+                        <input class="form-control form-control-sm" type="text" id="total_quantity" placeholder="">
+                        <div class="input-group-append">
+                            <select class="form-control input-group-btn form-control-sm">
+                                <option value="bsf" selected>BSF</option>
+                            </select>
+                        </div>    
+                    </div>
+                    <div class="form-group input-group col">
+                        <input class="form-control form-control-sm" type="text" id="usd_quantity" value="" placeholder="$ 0.00" readonly>
+                        <div class="input-group-append">
+                                <div class="form-control form-control-sm input-group-btn">USD</div>
+                        </div>
+                    </div>
+
+                </form>
+            </div> <!-- End of first column -->
+
+            <!-- Start of second column // Form entries -->
+            <div class="col-sm-6 col-md-6 col-lg-6 form-section">
+                <!-- Tabs are placed here -->
+                <nav class="nav-tab-header">
+                    <div class="nav-tab-title">
+                        <h3>¡Bienvenido de vuelta!</h3>
+                        <sub>¿No te haz registrado? <a href="">Crea una cuenta</a></sub>
+                    </div>
+                    <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="true">Acceder a mi cuenta</a>
+                        <a class="nav-item nav-link " id="nav-register-tab" data-toggle="tab" href="#nav-register" role="tab" aria-controls="nav-register" aria-selected="false">Crear una cuenta</a>
+                        <a class="nav-item nav-link " id="nav-lostpw-tab" data-toggle="tab" href="#nav-lostpw" role="tab" aria-controls="nav-lostpw" aria-selected="false">Olvide mi contraseña</a>
+                    </div>
+                </nav>
+                <!-- Login form starts here -->
+                <div class="tab-content" id="nav-tab-content">
+                    <div class="tab-pane fade show active login-form-section" id="nav-login" role="tab-panel" aria-labelledby="nav-login-tab">
+                        <form action="login.php" method="POST">
+                            <!-- Email input -->
+                            <div class="form-group input-group col">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope fa-sm"></i></span>
+                                </div>
+                                <input type="text" class="form-control form-control-sm" placeholder="Direccion de correo electronico">
+                            </div>
+                            <!-- Password input -->
+                            <div class="form-group input-group col">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-key fa-sm"></i></span>
+                                </div>
+                                <input class="form-control form-control-sm" type="password" placeholder="Contraseña">
+                            </div>
+                            <!-- Submit input -->
+                            <div class="form-group text-center col">
+                                <input class=" form-control form-control-sm btn btn-light btn-sm" type="submit" value="Iniciar sesion">
+                            </div>
+                        </form> <!-- Login form ends here -->
+                    </div>
+
+                    <!-- Register form starts here -->
+                    <div class="tab-pane fade show register-form-section" id="nav-register" role="tab-panel" aria-labelledby="nav-register-tab">
+                        <form action="register.php" method="POST">
+                            <div class="form-group input-group col">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-user fa-sm"></i></span>
+                                </div>
+                                <input class="form-control form-control-sm" type="text" placeholder="Nombres">
+                            </div>
+                            <div class="form-group input-group col">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-envelope fa-sm"></i></span>
+                                </div>
+                                <input class="form-control form-control-sm" type="text" placeholder="Direccion de correo electronico">
+                            </div>
+                            <div class="form-group input-group col">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-key fa-sm"></i></span>
+                                </div>
+                                <input class="form-control form-control-sm" type="password" placeholder="Contraseña">
+                            </div>
+                            <div class="form-group input-group col">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fas fa-mobile-alt fa-sm"></i></span>
+                                </div>
+                                <input class="form-control form-control-sm" type="text" placeholder="Teléfono">
+                            </div>
+                            <div class="form-group input-group col">
+                                <input class="form-control form-control-sm btn btn-light btn-sm" type="submit" value="Crear cuenta">
+                            </div>
+                        </form> 
+                    </div><!-- Register form ends here -->
+
+                    <!-- Lost Password form starts here -->
+                    <div class="tab-pane fade show lostpw-form-section" id="nav-lostpw" role="tabpanel" aria-labelledby="nav-lostpw-tab">
+                        <form action="lostpw.php" method="POST">
+                            <div class="form-group col">
+                                <div class="lostpw-info">
+                                    <h3>Introduce tu direccion de correo electronico</h3>
+                                    <sub>Se enviara una confirmacion a tu correo electronico para recuperar tu cuenta.</sub><br>
+                                </div>
+                                <hr>
+                                <input class="form-control form-control-sm" type="text" placeholder="ejemplo@cryptofera.com">
+                                <input class="form-control form-control-sm btn btn-light btn-sm" type="submit" value="Olvide mi contraseña">
+                            </div>
+                        </form>
+                    </div>
+                </div> <!-- End of second column -->
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest compiled JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="calculator.js"></script>
 </body>
 </html>
