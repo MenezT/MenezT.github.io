@@ -1,40 +1,40 @@
-<html lang="en">
+<html lang="es-ES">
 <head>
+    <!-- @menez.trending - cryptofera.com platform .. / -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- FAVICON -->
-    <link rel="shortcut icon" type="image/png" href="https://cryptofera.com/wp-content/uploads/2018/07/cropped-favicon-1-32x32.png"/>
-    <!-- Bootstrap 4.0.0 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- FontAwesome 5.2.0 -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!-- Bootstrap 4.1.3 -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Material Design Icons: Compatible w/ Bootstrap 4.1.3 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="main.css">
-
-    <title>cExchange Template - https://cryptofera.com</title>
-
-    <!-- jQuery & JavaScript functions -->
-    
+    <title>Login concept - cryptofera</title>
 
 </head>
 <body>
     <!-- Main container -->
     <div class="container">
-        <!-- Content starts here -->
-
-        <!-- Calculator section - First Row -->
         <div class="row panel">
-            <!-- Start of first column -->
-            <div class="col-sm-6 col-md-6 col-lg-6 calculator-section">
-                <form>
+            <!-- LEFT PANEL: CALCULATOR - INFORMATION - CONTENT -->
+            <div class="col-sm-4 col-md-4 col-lg-4 left-panel">
+                <div class="header">
+                    <p>¡La más simple conexión entre servicios y criptomonedas!</p>
+                    <hr>
+                </div>
+                <form class="calculator">
                     <div class="form-group">
-                        <h2>cMarket Calculator</h2>
+                        <h5><span style="font-weight: bold">cMarket:</span> Calcula nuestras tasas</h5>
                     </div>
                     <div class="form-group input-group col">
                         <input class="form-control form-control-sm" type="number" id="currency_quantity" placeholder="">
                         <div class="input-group-append">
-                            <select class="form-control input-group-btn form-control-sm" id="currency_selector">
+                            <select class="form-control-sm input-group-btn" id="currency_selector">
                                 <option value="steem" selected>STEEM</option>
                                 <option value="sbd">SBD</option>
                             </select>
@@ -43,119 +43,136 @@
                     <div class="form-group input-group input-group- col">
                         <input class="form-control form-control-sm" type="text" id="total_quantity" placeholder="">
                         <div class="input-group-append">
-                            <select class="form-control input-group-btn form-control-sm">
+                            <select class="form-control-sm input-group-btn">
                                 <option value="bsf" selected>BSF</option>
                             </select>
-                        </div>    
+                        </div>
                     </div>
                     <div class="form-group input-group col">
                         <input class="form-control form-control-sm" type="text" id="usd_quantity" value="" placeholder="$ 0.00" readonly>
                         <div class="input-group-append">
-                                <div class="form-control form-control-sm input-group-btn">USD</div>
+                            <div class="form-control-sm input-group-btn">USD</div>
                         </div>
                     </div>
-
                 </form>
-            </div> <!-- End of first column -->
-
-            <!-- Start of second column // Form entries -->
-            <div class="col-sm-6 col-md-6 col-lg-6 form-section">
-                <!-- Tabs are placed here -->
-                <nav class="nav-tab-header">
-                    <div class="nav-tab-title">
-                        <h3>¡Bienvenido de vuelta!</h3>
-                        <sub>¿No te haz registrado? <a href="">Crea una cuenta</a></sub>
-                    </div>
+            </div>
+            <!-- RIGHT PANEL: LOGIN - REGISTRATION - FORMS -->
+            <div class="col-sm-6 col-md-6 col-lg-6 right-panel">
+                <div class="logo">
+                    <a href="https://cryptofera.com"><img src="img/logo.png"></a>
+                </div>
+                <nav>
                     <div class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
-                        <a class="nav-item nav-link active" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="true">Acceder a mi cuenta</a>
-                        <a class="nav-item nav-link " id="nav-register-tab" data-toggle="tab" href="#nav-register" role="tab" aria-controls="nav-register" aria-selected="false">Crear una cuenta</a>
-                        <a class="nav-item nav-link " id="nav-lostpw-tab" data-toggle="tab" href="#nav-lostpw" role="tab" aria-controls="nav-lostpw" aria-selected="false">Olvide mi contraseña</a>
+                        <a class="nav-item nav-link active" id="nav-login-tab" data-toggle="tab" href="#nav-login" role="tab" aria-controls="nav-login" aria-selected="true">INICIAR SESION</a>
+                        <a class="nav-item nav-link" id="nav-register-tab" data-toggle="tab" href="#nav-register" role="tab" aria-controls="nav-register" aria-selected="false">REGISTRARSE</a>
                     </div>
                 </nav>
-                <!-- Login form starts here -->
-                <div class="tab-content" id="nav-tab-content">
-                    <div class="tab-pane fade show active login-form-section" id="nav-login" role="tab-panel" aria-labelledby="nav-login-tab">
+                <div class="tab-content" id="nav-tabContent">
+                    <!-- Login content -->
+                    <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">
+                        <div class="right-header">
+                            <h2>¡Bienvenido de vuelta!</h2>
+                        </div>
+                        
                         <form action="login.php" method="POST">
-                            <!-- Email input -->
                             <div class="form-group input-group col">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1"><i class="fas fa-envelope fa-sm"></i></span>
+                                    <span class="form-control-sm input-group-text">
+                                        <i class="material-icons">email</i>
+                                    </span>
                                 </div>
-                                <input type="text" class="form-control form-control-sm" placeholder="Direccion de correo electronico">
+                                <input class="form-control form-control-sm" type="email" placeholder="Direccion de correo electronico">
                             </div>
-                            <!-- Password input -->
                             <div class="form-group input-group col">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fas fa-key fa-sm"></i></span>
+                                    <span class="form-control-sm input-group-text">
+                                        <i class="material-icons">lock</i>
+                                    </span>
                                 </div>
-                                <input class="form-control form-control-sm" type="password" placeholder="Contraseña">
+                                <input class="form-control form-control-sm" type="password" placeholder="Contrasena">
                             </div>
-                            <!-- Submit input -->
-                            <div class="form-group text-center col">
-                                <input class=" form-control form-control-sm btn btn-light btn-sm" type="submit" value="Iniciar sesion">
+                            <div class="form-group text-center">
+                                <input class="form-control form-control-sm btn btn-primary btn-sm" type="submit" value="Iniciar sesion">
                             </div>
-                        </form> <!-- Login form ends here -->
+                        </form>
+                        <div class="right-footer">
+                            <div class="reset-pw text-center">
+                                <sub><a href="reset_pw.php">Olvide mi contrasena</a></sub>
+                            </div>
+                            <div class="ext-links">
+                                <ul>
+                                    <li><a href="#">FAQ</a></li>
+                                    <span style="color: #ffffff">|</span>
+                                    <li><a href="#">Terminos y condiciones</a></li>
+                                    <span style="color: #ffffff">|</span>
+                                    <li><a href="#">Reglamentos</a></li>
+                                    <span style="color: #ffffff">|</span>
+                                    <li><a href="#">Servicios</a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- Register form starts here -->
-                    <div class="tab-pane fade show register-form-section" id="nav-register" role="tab-panel" aria-labelledby="nav-register-tab">
+                    <!-- Register content starts here -->
+                    <div class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">
+                        <!-- Register form starts here -->
+                        <div class="right-header">
+                            <h2>¡Excelente, únete a nosotros!</h2>
+                        </div>
                         <form action="register.php" method="POST">
                             <div class="form-group input-group col">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fas fa-user fa-sm"></i></span>
+                                    <span class="form-control-sm input-group-text">
+                                        <i class="material-icons">person</i>
+                                    </span>
                                 </div>
-                                <input class="form-control form-control-sm" type="text" placeholder="Nombres">
+                                <input class="form-control form-control-sm" type="text" placeholder="Nombre completo">
                             </div>
                             <div class="form-group input-group col">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fas fa-envelope fa-sm"></i></span>
+                                    <span class="form-control-sm input-group-text">
+                                        <i class="material-icons">email</i>
+                                    </span>
                                 </div>
-                                <input class="form-control form-control-sm" type="text" placeholder="Direccion de correo electronico">
+                                <input class="form-control form-control-sm" type="email" placeholder="Direccion de correo electronico">
                             </div>
                             <div class="form-group input-group col">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fas fa-key fa-sm"></i></span>
+                                    <span class="form-control-sm input-group-text">
+                                        <i class="material-icons">phone_in_talk</i>
+                                    </span>
                                 </div>
-                                <input class="form-control form-control-sm" type="password" placeholder="Contraseña">
+                                <input class="form-control form-control-sm" type="number" placeholder="Telefono">
                             </div>
                             <div class="form-group input-group col">
                                 <div class="input-group-prepend">
-                                    <span class="input-group-text"><i class="fas fa-mobile-alt fa-sm"></i></span>
+                                    <span class="form-control-sm input-group-text">
+                                        <i class="material-icons">lock</i>
+                                    </span>
                                 </div>
-                                <input class="form-control form-control-sm" type="text" placeholder="Teléfono">
+                                <input class="form-control form-control-sm" type="password" placeholder="Contrasena">
                             </div>
-                            <div class="form-group input-group col">
-                                <input class="form-control form-control-sm btn btn-light btn-sm" type="submit" value="Crear cuenta">
-                            </div>
-                        </form> 
-                    </div><!-- Register form ends here -->
-
-                    <!-- Lost Password form starts here -->
-                    <div class="tab-pane fade show lostpw-form-section" id="nav-lostpw" role="tabpanel" aria-labelledby="nav-lostpw-tab">
-                        <form action="lostpw.php" method="POST">
-                            <div class="form-group col">
-                                <div class="lostpw-info">
-                                    <h3>Introduce tu direccion de correo electronico</h3>
-                                    <sub>Se enviara una confirmacion a tu correo electronico para recuperar tu cuenta.</sub><br>
-                                </div>
-                                <hr>
-                                <input class="form-control form-control-sm" type="text" placeholder="ejemplo@cryptofera.com">
-                                <input class="form-control form-control-sm btn btn-light btn-sm" type="submit" value="Olvide mi contraseña">
+                            <div class="form-group text-center">
+                                <input class="form-control form-control-sm btn btn-primary btn-sm" type="submit" value="Continuar">
                             </div>
                         </form>
                     </div>
-                </div> <!-- End of second column -->
-
+                </div>
             </div>
         </div>
-    </div>
+    </div> <!-- End of Main container -->
+
+
+
+
 
     <!-- Latest compiled JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
-    <script src="calculator.js"></script>
+    <!-- Calculator Script -->
+    <script src="js/calculator.js"></script>
+
 </body>
 </html>
